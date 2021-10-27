@@ -109,17 +109,32 @@ border-radius: 4px;
   margin-left:100px ;
 }
 
+<<<<<<< HEAD
 /* ::-webkit-input-placeholder { 
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
+=======
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+
+  /* identical to box height */
+  
+  
+>>>>>>> 42fe0e20616f24c418779e00d21512cff06a78ad
   color: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 10px;
   left: 6px;
   width: 90px;
 height: 16px;
+<<<<<<< HEAD
 } */
+=======
+}
+>>>>>>> 42fe0e20616f24c418779e00d21512cff06a78ad
 
 
 .selectOption{
@@ -314,10 +329,13 @@ border-radius: 4px;
     #butnsId{
       margin-left:-65px ;
     }
+<<<<<<< HEAD
     #innerChart{
       margin-left:0px ;
 
     }
+=======
+>>>>>>> 42fe0e20616f24c418779e00d21512cff06a78ad
 }
 
 
@@ -332,9 +350,12 @@ border-radius: 4px;
       top:90px;
       left:110px;
     }
+<<<<<<< HEAD
     #innerChart{
       margin-left:0px ;
     }
+=======
+>>>>>>> 42fe0e20616f24c418779e00d21512cff06a78ad
 }
 
 
@@ -350,9 +371,12 @@ border-radius: 4px;
       top:90px;
       left:110px;
     }
+<<<<<<< HEAD
     #innerChart{
       margin-left:0px ;
     }
+=======
+>>>>>>> 42fe0e20616f24c418779e00d21512cff06a78ad
 }
 
 @media only screen and (max-width:424px) {
@@ -366,9 +390,12 @@ border-radius: 4px;
       top:50px;
       left:70px;
     }
+<<<<<<< HEAD
     #innerChart{
       margin-left:0px ;
     }
+=======
+>>>>>>> 42fe0e20616f24c418779e00d21512cff06a78ad
 }
 
 /* @media only screen and (max-width:375px) {
@@ -420,6 +447,7 @@ border-radius: 4px;
   text-align: center;
   
   color:#131923;
+<<<<<<< HEAD
 }
 
 
@@ -537,4 +565,6 @@ circle:nth-child(3){
 	transform: translate(-50%,-50%);
 	color: #fff;
 	font-size: 40px;
+=======
+>>>>>>> 42fe0e20616f24c418779e00d21512cff06a78ad
 }

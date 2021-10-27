@@ -7,6 +7,7 @@ import { Img } from "@chakra-ui/image";
 import { Box, Flex, Text } from "@chakra-ui/layout";
 import { Select } from "@chakra-ui/select";
 import React, { Component } from "react";
+<<<<<<< HEAD
 import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
 import { SimpleGrid } from "@chakra-ui/react"
@@ -98,11 +99,24 @@ export default class OverView extends Component {
     // Binding this keyword 
     this.updateState = this.updateState.bind(this)
     this.updateState2 = this.updateState2.bind(this)
+=======
+// eslint-disable-next-line
+import AddProject from './ProjectCreation/AddProject';
+// eslint-disable-next-line
+import AddProjectResponsive from './ProjectCreation/AddProjectResponsive';
+
+export default class OverView extends Component {
+  constructor(x) {
+    super(x);
+    this.state = {showComponent: false,};
+    this._onButtonClick = this._onButtonClick.bind(this);
+>>>>>>> 42fe0e20616f24c418779e00d21512cff06a78ad
   }
   _onButtonClick() {
     this.setState({
       showComponent: true,
     });
+<<<<<<< HEAD
   }
   updateState() {
     fMonth = tMonth
@@ -175,6 +189,8 @@ export default class OverView extends Component {
     this.setState({
       showActivitiesVal: !showActivitiesVal,
     });
+=======
+>>>>>>> 42fe0e20616f24c418779e00d21512cff06a78ad
   }
 
   render() {
@@ -544,6 +560,7 @@ export default class OverView extends Component {
             variant="ghost"
           >
             <AiOutlinePlus />
+<<<<<<< HEAD
             <Text mx="2" onClick={this._onButtonClick}>Add Project
             </Text>
           </Button>
@@ -551,7 +568,22 @@ export default class OverView extends Component {
             <AddProject />  :
            null
         } */}
+=======
+            <Text mx="2" onClick={this._onButtonClick}>Add Project 
+</Text>
+          </Button>
+          {/* {this.state.showComponent ?
+                           <AddProject />  :
+           null
+        } */}
+                  {/* {this.state.showComponent ?
+                           <AddProjectResponsive />  :
+           null
+        } */}
+        
+>>>>>>> 42fe0e20616f24c418779e00d21512cff06a78ad
         </Box>
+
       </>
     );
   }

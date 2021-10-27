@@ -1,6 +1,5 @@
-import {
-    Modal, ModalOverlay, ModalContent, ModalFooter, ModalBody, ModalHeader, ModalCloseButton
-} from "@chakra-ui/react";
+// eslint-disable-next-line
+import { Modal, ModalOverlay, ModalContent, ModalFooter, ModalBody, ModalHeader, ModalCloseButton } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/hooks";
 import { IconButton, Button } from "@chakra-ui/button";
 import { v4 as uuidv4 } from 'uuid';
@@ -13,8 +12,9 @@ uuidv4();
 
 function AddTaskDialog({ addComp }) {
     const { isOpen, onOpen, onClose } = useDisclosure();
-
+// eslint-disable-next-line
     const [descriptionEmpty, setDescriptionEmpty] = useState(false)
+   // eslint-disable-next-line
     const [titleEmpty, setTitleEmpty] = useState(false)
 
     const title = useRef(null);

@@ -22,7 +22,9 @@ export default function CreateProject() {
                     </Flex>
                     <Center>
                         <Flex boxShadow='dark-lg' roundedRight='0' w='80vw' color='#DADADA' mb='10' >
+                            
                             <Box bg='#292C32' w='35%' h='60vh' />
+                           {/* eslint-disable-next-line */}
                             <Box w='40%' w='65%' bg='#EAEAEC'>
                                 <Box ml='10' mr='10'>
                                     <Center color='black' mt='10vh' mb='5vh'>

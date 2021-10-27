@@ -1,7 +1,9 @@
+// eslint-disable-next-line
 import React, { createElement, useState } from "react";
 import { motion } from "framer-motion";
 import { useMeasurePosition } from "./useMeasurePosition";
 import { usePositionReorder } from "./usePositionReorder";
+// eslint-disable-next-line
 import { Box, Flex, Text } from "@chakra-ui/layout";
 import { IconButton } from "@chakra-ui/button";
 import { MdPermContactCalendar } from "react-icons/md";
@@ -26,7 +28,7 @@ export default function ListCards({ dataProp }) {
   // function back() {
   //     setShowDiaglog(false)
   // }
-
+// eslint-disable-next-line
   const messages = [
     {
       msg: "Hello i am Tom!",
@@ -57,7 +59,7 @@ export default function ListCards({ dataProp }) {
       type: "receiver",
     },
   ];
-
+// eslint-disable-next-line
   function addTask() {}
 
   return (
@@ -104,14 +106,14 @@ function Item({ i, height, updatePosition, updateOrder, dataProp }) {
   const [isDragging, setDragging] = useState(false);
 
   const ref = useMeasurePosition((pos) => updatePosition(i, pos));
-
+// eslint-disable-next-line
   const [created, setCreated] = useState(false);
   function showCatalogDialog() {
     return <AddCatlogDialog showProp={true} />;
   }
 
   function openMenu() {}
-
+// eslint-disable-next-line
   function createContextMenu() {}
 
   return (

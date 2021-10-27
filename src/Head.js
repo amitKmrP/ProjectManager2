@@ -4,6 +4,7 @@ import { Avatar } from "@chakra-ui/avatar";
 import { BellIcon, SearchIcon, AddIcon } from "@chakra-ui/icons";
 import DrawerExample from "./Drawer";
 import MenuDrop from "./Menu";
+// eslint-disable-next-line
 import CreateProject from './components/CreateProject'
 import ListCards from "./components/ListCards/ListCards";
 import Main from "./Main";
@@ -89,7 +90,9 @@ function Head() {
               <TabPanel>
                 {/* <p>Add new project</p> */}
                 <CreateProject />
+                {/* <AddProject /> */}
               </TabPanel>
+
               <div style={{ position: 'absolute', top: '0%', right: '2%' }}>
                 <AddCatlogDialog />
               </div>

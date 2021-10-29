@@ -6,8 +6,7 @@ import { PieChart } from 'react-minimal-pie-chart';
 import { Img } from "@chakra-ui/image";
 import { Box, Flex, Text } from "@chakra-ui/layout";
 import { Select } from "@chakra-ui/select";
-import React, { Component } from "react";
-<<<<<<< HEAD
+import React, { Component,UnorderedList,ListItem } from "react";
 import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
 import { SimpleGrid } from "@chakra-ui/react"
@@ -23,6 +22,28 @@ import { Progress, Divider } from "@chakra-ui/react"
 import { CircularProgress, CircularProgressLabel } from "@chakra-ui/react"
 // eslint-disable-next-line
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+const recentActivities = [
+  {
+    activity: "Vivek S added Neeleshwar K to CL- Scott Build GIF Animations for new Technology platform",
+    time: "1day ago"
+  },
+  {
+    activity: "Vivek S added Neeleshwar K to CL- Scott Build GIF Animations for new Technology platform",
+    time: "1day ago"
+  },
+  {
+    activity: "Vivek S added Neeleshwar K to CL- Scott Build GIF Animations for new Technology platform",
+    time: "1day ago"
+  },
+  {
+    activity: "Vivek S added Neeleshwar K to CL- Scott Build GIF Animations for new Technology platform",
+    time: "1day ago"
+  },
+  {
+    activity: "Vivek S added Neeleshwar K to CL- Scott Build GIF Animations for new Technology platform",
+    time: "1day ago"
+  }
+]
 const monthsData = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const d = new Date();
 // eslint-disable-next-line
@@ -56,13 +77,19 @@ const options = {
     data: [0, 29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
     color: 'rgba(192, 192, 192, 0)',
     pointStart: d.getUTCFullYear(),
-    pointInterval: 3600 * 1000 * 24 * 14
+    pointInterval: 3600 * 1000 * 24 
   },
   {
     data: [0, 9.9, 1.5, 16.4, 19.2, 14.0, 16.0, 15.6, 18.5, 26.4, 14.1, 95.6, 54.4],
     color: 'rgba(154, 198, 86, 0.45)',
     pointStart: d.getUTCFullYear(),
-    pointInterval: 3600 * 1000 * 24 * 14
+    pointInterval: 3600 * 1000 * 24 
+  },
+  {
+    data: [0, 0.9, 1.5, 1.4, 119.2, 14.0, 16.0, 15.6, 18.5, 26.4, 14.1, 95.6, 54.4],
+    color: 'rgba(154, 198, 86, 0.45)',
+    pointStart: d.getUTCFullYear(),
+    pointInterval: 3600 * 1000 * 24 
   }
   ]
 }
@@ -99,24 +126,11 @@ export default class OverView extends Component {
     // Binding this keyword 
     this.updateState = this.updateState.bind(this)
     this.updateState2 = this.updateState2.bind(this)
-=======
-// eslint-disable-next-line
-import AddProject from './ProjectCreation/AddProject';
-// eslint-disable-next-line
-import AddProjectResponsive from './ProjectCreation/AddProjectResponsive';
-
-export default class OverView extends Component {
-  constructor(x) {
-    super(x);
-    this.state = {showComponent: false,};
-    this._onButtonClick = this._onButtonClick.bind(this);
->>>>>>> 42fe0e20616f24c418779e00d21512cff06a78ad
   }
   _onButtonClick() {
     this.setState({
       showComponent: true,
     });
-<<<<<<< HEAD
   }
   updateState() {
     fMonth = tMonth
@@ -189,8 +203,6 @@ export default class OverView extends Component {
     this.setState({
       showActivitiesVal: !showActivitiesVal,
     });
-=======
->>>>>>> 42fe0e20616f24c418779e00d21512cff06a78ad
   }
 
   render() {
@@ -422,15 +434,13 @@ export default class OverView extends Component {
 
               </Flex></Box>
   </SimpleGrid>
-  <SimpleGrid columns={2} spacing={0}>
-            <Box  height="auto" width="880px"> 
-              <Box>
+  <SimpleGrid columns={1} spacing={0}>
+       
                 <HighchartsReact
                   highcharts={Highcharts}
                   options={options}
                 />
-              </Box>
-              </Box>
+       
               </SimpleGrid>
               <Divider />
               <Flex>
@@ -538,7 +548,14 @@ export default class OverView extends Component {
               <Divider />
               <Flex>
                 {this.state.showActivitiesVal === true ?
-
+// recentActivities.map((project, index) =>
+//   <>
+//   <UnorderedList style={{"list-style-type": "none"}}>
+//   <ListItem fontSize="14px" key={index}><Text isTruncated maxWidth="450px">{project.activity}</Text></ListItem>
+//   <span style={{"fontSize":"11px"}}>{project.time}</span>
+//     </UnorderedList>
+//   </>
+//   )
                   <Text mx="1px" my="2" fontSize="xl" fontFamily="sans-serif"  >
                     Data to be loaded
                   </Text>
@@ -560,7 +577,6 @@ export default class OverView extends Component {
             variant="ghost"
           >
             <AiOutlinePlus />
-<<<<<<< HEAD
             <Text mx="2" onClick={this._onButtonClick}>Add Project
             </Text>
           </Button>
@@ -568,22 +584,7 @@ export default class OverView extends Component {
             <AddProject />  :
            null
         } */}
-=======
-            <Text mx="2" onClick={this._onButtonClick}>Add Project 
-</Text>
-          </Button>
-          {/* {this.state.showComponent ?
-                           <AddProject />  :
-           null
-        } */}
-                  {/* {this.state.showComponent ?
-                           <AddProjectResponsive />  :
-           null
-        } */}
-        
->>>>>>> 42fe0e20616f24c418779e00d21512cff06a78ad
         </Box>
-
       </>
     );
   }

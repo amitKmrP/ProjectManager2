@@ -9,7 +9,11 @@ body {
 #listCatalog:hover {
   transform: scale(1.02);
 } */
-
+.iconb {
+  position: absolute;
+  top: 145px;
+  right: 900px;
+}
 
 #ctx {
   background-color: gray;
@@ -109,32 +113,17 @@ border-radius: 4px;
   margin-left:100px ;
 }
 
-<<<<<<< HEAD
 /* ::-webkit-input-placeholder { 
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
-=======
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  font-family: Lato;
-  font-style: normal;
-  font-weight: normal;
-
-  /* identical to box height */
-  
-  
->>>>>>> 42fe0e20616f24c418779e00d21512cff06a78ad
   color: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 10px;
   left: 6px;
   width: 90px;
 height: 16px;
-<<<<<<< HEAD
 } */
-=======
-}
->>>>>>> 42fe0e20616f24c418779e00d21512cff06a78ad
 
 
 .selectOption{
@@ -148,8 +137,14 @@ border-radius: 4px;
 }
 
 
-@media only screen and (max-width: 1351px) {
-  .mainDivId {
+@media only screen and (max-width: 1440px) {
+
+  .iconb{
+    right: 465px;
+  }
+}
+  @media only screen and (max-width: 1351px) {
+    .mainDivId {
     width: 1351px;
     height:900px;
   }
@@ -175,6 +170,9 @@ border-radius: 4px;
     }
     #butnsId{
       margin-left:90px ;
+    }
+    .iconb{
+      right: 320px;
     }
 }
 
@@ -329,13 +327,10 @@ border-radius: 4px;
     #butnsId{
       margin-left:-65px ;
     }
-<<<<<<< HEAD
     #innerChart{
       margin-left:0px ;
 
     }
-=======
->>>>>>> 42fe0e20616f24c418779e00d21512cff06a78ad
 }
 
 
@@ -350,12 +345,9 @@ border-radius: 4px;
       top:90px;
       left:110px;
     }
-<<<<<<< HEAD
     #innerChart{
       margin-left:0px ;
     }
-=======
->>>>>>> 42fe0e20616f24c418779e00d21512cff06a78ad
 }
 
 
@@ -371,15 +363,15 @@ border-radius: 4px;
       top:90px;
       left:110px;
     }
-<<<<<<< HEAD
     #innerChart{
       margin-left:0px ;
     }
-=======
->>>>>>> 42fe0e20616f24c418779e00d21512cff06a78ad
+    .iconb{
+      right: 164px;
+    }
 }
 
-@media only screen and (max-width:424px) {
+@media only screen and (max-width:425px) {
   .mainDivId {
     width: 424px;
     height:545px;
@@ -390,12 +382,12 @@ border-radius: 4px;
       top:50px;
       left:70px;
     }
-<<<<<<< HEAD
     #innerChart{
       margin-left:0px ;
     }
-=======
->>>>>>> 42fe0e20616f24c418779e00d21512cff06a78ad
+    .iconb{
+      right: -174px;
+    }
 }
 
 /* @media only screen and (max-width:375px) {
@@ -447,7 +439,6 @@ border-radius: 4px;
   text-align: center;
   
   color:#131923;
-<<<<<<< HEAD
 }
 
 
@@ -565,6 +556,128 @@ circle:nth-child(3){
 	transform: translate(-50%,-50%);
 	color: #fff;
 	font-size: 40px;
-=======
->>>>>>> 42fe0e20616f24c418779e00d21512cff06a78ad
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+body {
+  background-color: #eee;
+  font-family: "Open Sans", sans-serif;
+}
+
+#listCatalog {
+  transition: transform 300ms ease-in-out;
+}
+/* 
+#listCatalog:hover {
+  transform: scale(1.02);
+} */
+
+#ctx {
+  background-color: gray;
+  position: "absolute";
+  z-index: "10";
+  right: 0%;
+}
+main {
+  grid-area: main;
+  background-color: white;
+}
+.main-menu {
+  margin: 5px 0;
+  position: relative;
+  max-height: 250px;
+  top: -50px;
+}
+.heading {
+  position: absolute;
+  top: 150px;
+}
+.main-menu .menu-item {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 22px;
+  display: block;
+  font-weight: 370;
+  cursor: pointer;
+  padding: 13px 30px;
+}
+
+/* not required any more */
+
+.sub-menu {
+  color: #333;
+  margin-left: 11px;
+  border-left: 1px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+  padding-left: 30px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in;
+  cursor: pointer;
+  position: absolute;
+  width: 180px;
+}
+
+.sub-menu.active {
+  max-height: 300px;
+}
+a.sub-menu.active:hover,
+a.sub-menu:active {
+  color: red;
+}
+.sub-menu a {
+  display: block;
+  margin: 5px 0;
+  font-size: 15px;
+  font-weight: 550;
+  text-decoration: none;
+  color: rgb(112, 112, 112);
+  box-sizing: border-box;
+  padding: 9px;
+}
+
+.sub-menu a.active {
+  /* change in background, not recorded in video */
+  color: rgb(179, 179, 179);
+}
+.menu-item.active {
+  color: grey;
+}
+.menu-item:hover {
+  color: grey;
+}
+.sub-menu a:hover {
+  color: rgb(179, 179, 179);
+}
+.icona {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+}
+.singleline {
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.deleteButton {
+  text-decoration: none;
+  font-size: 22px;
+  cursor: pointer;
+  font-weight: 370;
+  color: rgb(209, 105, 105);
+}
+.deleteButton:hover {
+  color: rgb(160, 28, 28);
+}
+

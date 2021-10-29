@@ -6,6 +6,8 @@ import { CloseIcon } from '@chakra-ui/icons'
 import { Stack, HStack, VStack } from "@chakra-ui/react"
 export default function AddProjectResponsive() {
     return (
+        <Box bg='#292C32' w='35%' h='60vh' >
+
         <Flex className="mainDivId" bg='#DADADA' position='absolute' border='1px solid #DADADA' alignItems="center" justifyContent="center" >
             <Flex className="subDivId" t='208px' l='249px' direction="column" borderRadius='8px' bg='#FFFFFF' position='absolute' >
                 <Flex justify='end'>
@@ -80,5 +82,6 @@ export default function AddProjectResponsive() {
                 </form>
             </Flex>
         </Flex>
+</Box>
     )
 }

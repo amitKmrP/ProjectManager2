@@ -14,17 +14,14 @@
 
   transition: opacity 500ms ease-in-out;
 }
-.Todo:hover{
- 
-
-box-shadow: 1px 1px 5px 5px rgb(100 100 100 / 10%);
-
+.Todo:hover {
+  box-shadow: 1px 1px 5px 5px rgb(100 100 100 / 10%);
 }
 .Todo-task {
   position: relative;
   transition: opacity 0.4s linear;
   margin-bottom: 40px;
-  padding: 0 30px
+  padding: 0 30px;
 }
 .Todo.completed {
   transition: opacity 300ms ease-in-out;
@@ -73,7 +70,7 @@ box-shadow: 1px 1px 5px 5px rgb(100 100 100 / 10%);
 
 button {
   border: none;
-float: right;
+  float: right;
   background: none;
 
   cursor: pointer;
@@ -100,15 +97,11 @@ float: right;
   border-radius: 5px;
   margin-left: 0.8rem;
   padding: 20px;
-
 }
 
-
-.Todo-edit-form input:focus{
-
+.Todo-edit-form input:focus {
   background-color: rgba(172, 255, 47, 0.164);
   border: 1px solid rgba(0, 128, 0, 0.253);
-
 }
 .Todo-edit-form button {
   padding: 0 0.5rem;
@@ -134,26 +127,24 @@ float: right;
   height: 1rem;
 }
 
-.fa-edit, .fa-trash-alt  {
+.fa-edit,
+.fa-trash-alt {
   color: rgb(63, 62, 62);
   font-size: 15px;
   margin-right: 10px;
 }
-.fa-edit:hover{
+.fa-edit:hover {
   color: rgb(0, 153, 255);
-font-size: 25px;
-
-} 
-
-.fa-trash-alt:hover  {
-  color: rgb(136, 255, 0);
-font-size: 25px;
-  
+  font-size: 25px;
 }
 
+.fa-trash-alt:hover {
+  color: rgb(136, 255, 0);
+  font-size: 25px;
+}
 
 .buttonss {
   margin-right: 12px;
-display: flex;
-justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }

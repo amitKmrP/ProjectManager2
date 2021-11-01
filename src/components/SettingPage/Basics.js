@@ -11,6 +11,7 @@ import {
   Checkbox,
   Button,
   Heading,
+  Text
 } from "@chakra-ui/react";
 import { AddIcon } from "@chakra-ui/icons";
 export default function Bascis() {
@@ -121,13 +122,14 @@ export default function Bascis() {
             Change profile visibility
           </FormLabel>
           <br />
-          <RadioGroup defaultValue="member">
+          <RadioGroup defaultValue="member" color="#0a0909">
             <Stack spacing="17px">
-              <Radio value="member" color="black">
+              <Radio value="member" >
                 Non-member users can only see your basic information excluding
                 the email.
               </Radio>
-              <Radio value="non-member" color="black">
+              
+              <Radio value="non-member" >
                 Non-member users cannot access your profile page.
               </Radio>
             </Stack>

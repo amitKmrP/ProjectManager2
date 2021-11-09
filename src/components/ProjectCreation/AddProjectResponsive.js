@@ -1,9 +1,8 @@
 // eslint-disable-next-line
-import Head from 'next/head'
 import { Container, Flex, Box, IconButton, Center, Heading, FormControl, Input, Select, Button } from "@chakra-ui/react"
 import { CloseIcon } from '@chakra-ui/icons'
 // eslint-disable-next-line
-import { Stack, HStack, VStack } from "@chakra-ui/react"
+import { VStack } from "@chakra-ui/react"
 export default function AddProjectResponsive() {
     return (
         <Box bg='#292C32' w='35%' h='60vh' >

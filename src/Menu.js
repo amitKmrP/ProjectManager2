@@ -20,7 +20,8 @@ import { Input } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 
 import { ModalN1, ModalN2 } from "./ModalN";
-import CreateProject from "./components/CreateProject";
+// eslint-disable-next-line
+// import CreateProject from "./components/CreateProject";
 
 function MenuDrop1(props) {
   return (

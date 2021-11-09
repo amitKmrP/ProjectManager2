@@ -10,8 +10,7 @@ import {
   HStack,
   Checkbox,
   Button,
-  Heading,
-  Text
+  Heading
 } from "@chakra-ui/react";
 import { AddIcon } from "@chakra-ui/icons";
 export default function Bascis() {

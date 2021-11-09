@@ -1,11 +1,7 @@
 import Head from "./Head";
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Route,
-  Redirect,
-  Switch,
-} from "react-router-dom";
+// eslint-disable-next-line
+import {  BrowserRouter as Router,  Route,  Redirect,  } from "react-router-dom";
 import { Center, Flex, Text } from "@chakra-ui/layout";
 import SideMenu from "./components/SettingPage/SideMenu";
 import General from "./components/SettingPage/General";

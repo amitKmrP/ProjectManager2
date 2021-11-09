@@ -9,7 +9,6 @@ import {
   Radio,
   HStack,
   Checkbox,
-  VStack,
 } from "@chakra-ui/react";
 
 export default function ProjectPreference() {

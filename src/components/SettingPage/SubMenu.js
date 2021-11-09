@@ -7,7 +7,7 @@ export default function SubMenu(props) {
     <div>
       <ul>
         <li>
-          <a
+          <a href="#"
             onClick={() => setOpen(!open)}
             className={`menu-item ${open ? "active" : ""}`}
           >

@@ -1,14 +1,11 @@
 import React from "react";
-import { Box, Center, Flex, Text, Square, Heading } from "@chakra-ui/layout";
-import { useState, useEffect } from "react";
+import { Heading } from "@chakra-ui/layout";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import SubMenu from "./SubMenu";
 import {
   Avatar,
-  AvatarBadge,
-  AvatarGroup,
-  Wrap,
-  WrapItem,
+
 } from "@chakra-ui/react";
 
 export default function SideMenu(props) {

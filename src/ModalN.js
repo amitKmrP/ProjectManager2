@@ -15,13 +15,8 @@ import {
   Button,
   Input,
 } from "@chakra-ui/react";
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
-} from "@chakra-ui/menu";
+// eslint-disable-next-line
+import {    MenuItem} from "@chakra-ui/menu";
 
 export function ModalN1(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();

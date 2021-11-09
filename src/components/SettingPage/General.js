@@ -5,16 +5,13 @@ import {
   FormLabel,
   Input,
   Stack,
-  Select,
-  Radio,
-  RadioGroup,
+
   HStack,
-  Checkbox,
-  Button,
+
   Heading,
   Avatar,
 } from "@chakra-ui/react";
-import { AddIcon } from "@chakra-ui/icons";
+// import { AddIcon } from "@chakra-ui/icons";
 
 export default function General() {
   return (

@@ -1,12 +1,12 @@
 import { Avatar } from "@chakra-ui/avatar";
 // eslint-disable-next-line
-import { Button, IconButton } from "@chakra-ui/button";
+import { Button } from "@chakra-ui/button";
 import { AiOutlinePlus } from "react-icons/ai";
 import { PieChart } from 'react-minimal-pie-chart';
 import { Img } from "@chakra-ui/image";
 import { Box, Flex, Text } from "@chakra-ui/layout";
 import { Select } from "@chakra-ui/select";
-import React, { Component,UnorderedList,ListItem } from "react";
+import React, { Component} from "react";
 import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
 import { SimpleGrid } from "@chakra-ui/react"
@@ -22,28 +22,28 @@ import { Progress, Divider } from "@chakra-ui/react"
 import { CircularProgress, CircularProgressLabel } from "@chakra-ui/react"
 // eslint-disable-next-line
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
-const recentActivities = [
-  {
-    activity: "Vivek S added Neeleshwar K to CL- Scott Build GIF Animations for new Technology platform",
-    time: "1day ago"
-  },
-  {
-    activity: "Vivek S added Neeleshwar K to CL- Scott Build GIF Animations for new Technology platform",
-    time: "1day ago"
-  },
-  {
-    activity: "Vivek S added Neeleshwar K to CL- Scott Build GIF Animations for new Technology platform",
-    time: "1day ago"
-  },
-  {
-    activity: "Vivek S added Neeleshwar K to CL- Scott Build GIF Animations for new Technology platform",
-    time: "1day ago"
-  },
-  {
-    activity: "Vivek S added Neeleshwar K to CL- Scott Build GIF Animations for new Technology platform",
-    time: "1day ago"
-  }
-]
+// const recentActivities = [
+//   {
+//     activity: "Vivek S added Neeleshwar K to CL- Scott Build GIF Animations for new Technology platform",
+//     time: "1day ago"
+//   },
+//   {
+//     activity: "Vivek S added Neeleshwar K to CL- Scott Build GIF Animations for new Technology platform",
+//     time: "1day ago"
+//   },
+//   {
+//     activity: "Vivek S added Neeleshwar K to CL- Scott Build GIF Animations for new Technology platform",
+//     time: "1day ago"
+//   },
+//   {
+//     activity: "Vivek S added Neeleshwar K to CL- Scott Build GIF Animations for new Technology platform",
+//     time: "1day ago"
+//   },
+//   {
+//     activity: "Vivek S added Neeleshwar K to CL- Scott Build GIF Animations for new Technology platform",
+//     time: "1day ago"
+//   }
+// ]
 const monthsData = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const d = new Date();
 // eslint-disable-next-line
